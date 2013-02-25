@@ -1,0 +1,12 @@
+//= require jquery
+//= require jquery_migrate
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require jquery-ui.min
+//= require jquery.ui.datepicker
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/campaigns
+//= require_tree .

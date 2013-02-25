@@ -1,0 +1,27 @@
+<center> <h1>Campaign Information</h1> </center>
+<hr />
+<div class="campaign-info" style="margin-left: auto; margin-right: auto; width: 75%">
+<div class="actions" style="margin: 10px; float: right">
+  <a href="#/<%= id %>/destroy" class="destroy"><button class="btn btn-danger">Destroy</button></a>
+  <a href=""#/index"" clas="destroy"><button class="btn btn-info">&lt;&lt; Back</button></a>
+</div>
+<h2><%= name %></h2>
+<p> <b>Start date: </b> <%= start_at %> <b>End date:</b> <%= end_at %> </p>
+<p>
+  <b>For countries:</b>
+  <% countries = JSON.parse(countries); %>
+  <% for(key in countries) { %>
+  	<div class="country">
+  	  Country: <b><%= key %></b>
+    <p>
+      Languages: 
+      <% _.each(countries[key], function(lang) { %>
+        <span class="language" style="margin: 0 5px">
+          <%= lang %>
+        </span>
+      <% }); %>
+    </p>	
+  	</div>
+  <% } %>
+</p>
+</div>

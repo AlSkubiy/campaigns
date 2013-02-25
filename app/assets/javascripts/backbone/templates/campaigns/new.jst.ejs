@@ -1,0 +1,35 @@
+<center> <h1>Add campaign</h1> </center>
+<hr />
+<div class="campaign-new" style="margin-left: auto; margin-right: auto; width: 75%">
+<h2>New campaign</h2>
+<div class="actions" style="margin: 10px; float: right">
+  <a href=""#/index"" clas="destroy"><button class="btn btn-info">&lt;&lt; Back to list</button></a>
+</div>
+<form id="new-campaign" name="campaign">
+  <div class="field">
+    <label for="name"> Name:</label>
+    <input type="text" name="name" id="name" value="<%= name %>" >
+  </div>
+
+  <div class="field">
+    <label for="start_at"> Start date:</label>
+    <input type="text"  class="datepicker" name="start_at" id="start_at" value="<%= start_at %>" >
+  </div>
+
+  <div class="field">
+    <label for="end_at"> End date:</label>
+    <input type="text" class="datepicker" name="end_at" id="end_at" value="<%= end_at %>" >
+  </div>
+
+  <div class="field">
+    <input type="button" id="add_country" class="btn btn-info" value="+ Add country" >
+    <div class="countries">
+
+    </div>
+  </div>
+
+  <div class="actions">
+    <input type="submit" class="btn btn-inverse" value="Create Campaign" />
+  </div>
+
+</form>
